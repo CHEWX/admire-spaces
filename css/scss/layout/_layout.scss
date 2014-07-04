@@ -1,0 +1,35 @@
+// Main layout styles go here
+
+.l-header {
+
+}
+.l-footer {
+	background:white;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+
+	ul {
+		li {
+			display:inline-block;
+		}
+	}
+}
+
+
+// Responsive styles if needed
+// @include responsive($small-desktop) {
+// }
+// @include responsive($tablet) {
+// }
+// @include responsive($mobile) {
+// }
+
+// Mobile first styles if needed
+// @include mobilefirst($mobile) {
+// }
+// @include mobilefirst($tablet) {
+// }
+// @include mobilefirst($mobile) {
+// }

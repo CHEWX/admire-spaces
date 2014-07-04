@@ -1,0 +1,17 @@
+// Element specific styles - keep this to a minimum
+
+.categories {
+
+	padding:0 $padding;
+
+	li {
+		float:left;
+		width:20%;
+		margin-right:5%;
+		border-bottom:1px dotted black;
+
+		a {
+			text-decoration:none;
+		}
+	}
+}
