@@ -1,2 +1,2 @@
-#Admire Spaces
-##A quick project whereby Media Temple were offering 1 dollar TLD's for 1 day only, I thought I would buy one and create a project in 1 hour. And here we are, I have a strong interest for architecture and renovation as a whole and I wanted a place to show my Pinterest pins that was away from Pinterest. The website went live after 1 hour - the commits that follow this will just be extra functionality from the already basic website.
+##Admire Spaces
+A quick project whereby Media Temple were offering 1 dollar TLD's for 1 day only, I thought I would buy one and create a project in 1 hour. And here we are, I have a strong interest for architecture and renovation as a whole and I wanted a place to show my Pinterest pins that was away from Pinterest. The website went live after 1 hour - the commits that follow this will just be extra functionality from the already basic website.
