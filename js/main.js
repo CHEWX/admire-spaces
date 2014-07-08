@@ -139,10 +139,45 @@
 })(jQuery);
 
 $(document).ready(function() {
-	$('.feed-reel').dcPinterestFeed({
-		id: 'admirespaces',
-		tweetId: 'admirespaces',
-		results: 50
-	});
-	$('.stream').addClass('bare-list');
+
+	if ($('.feed-reel').size() > 0) {
+		$('.feed-reel').dcPinterestFeed({
+			id: 'admirespaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+		$('.stream').addClass('bare-list');
+	}
+	if ($('.feed-reel--bathroom').size() > 0) {
+		$('.feed-reel--bathroom').dcPinterestFeed({
+			id: 'admirespaces/bathroom-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+		$('.stream').addClass('bare-list');
+	}
+	if ($('.feed-reel--office').size() > 0) {
+		$('.feed-reel--office').dcPinterestFeed({
+			id: 'admirespaces/office-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+		$('.stream').addClass('bare-list');
+	}
+	if ($('.feed-reel--kitchen').size() > 0) {
+		$('.feed-reel--kitchen').dcPinterestFeed({
+			id: 'admirespaces/kitchen-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+		$('.stream').addClass('bare-list');
+	}
+	if ($('.feed-reel--living').size() > 0) {
+		$('.feed-reel--living').dcPinterestFeed({
+			id: 'admirespaces/living-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+		$('.stream').addClass('bare-list');
+	}
 });
