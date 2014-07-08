@@ -26,13 +26,6 @@
 
 		create: function(el, options) {
 
-			// Set the default options
-			this.defaults = {
-				id: '', // enter username, pinterest list ID or search keyword
-				results: 10, // number of results to display
-				tweetId: '' // twitter username for share links
-			};
-
 			var o = $.extend(true,this.defaults,options);
 
 			// Add ul tag to target element
@@ -54,7 +47,7 @@
 					$.each(a, function(i,item){
 						if(i < o.results){
 							var d = item.publishedDate,
-								img = '<a href="'+item.link+'"><img src="'+$('img',item.content).attr('src')+'" alt="" /></a>',
+								img = '<a href="'+item.link+'" target="_blank"><img src="'+$('img',item.content).attr('src')+'" alt="" /></a>',
 								html = '<li>' + img + item.contentSnippet;
 
 							// Add share links
@@ -63,6 +56,8 @@
 							// Get time since
 							d = d != '' ? html += '<span class="date">'+nicetime(new Date(d).getTime())+'</span></li>' : '' ;
 						}
+
+						console.log(item);
 
 						// Add pinterest feed items to stream
 						$('.stream',el).append(html);
@@ -108,8 +103,8 @@
 	// Creates facebook & twitter share links
 	function shareLink(st,sq,tweetId){
 		var sq = encodeURIComponent(sq), st = encodeURIComponent(st);
-		var s = '<a href="http://www.facebook.com/sharer.php?u='+sq+'&t='+st+'" class="share-facebook"></a>';
-		s += '<a href="https://twitter.com/share?url='+sq+'&text='+st+'&via='+tweetId+'" class="share-twitter"></a>';
+		var s = '<a href="http://www.facebook.com/sharer.php?u='+sq+'&t='+st+'" class="share-facebook fa icon-facebook"></a>';
+		s += '<a href="https://twitter.com/share?url='+sq+'&text='+st+'&via='+tweetId+'" class="share-twitter fa icon-twitter"></a>';
 		return s;
 	}
 
@@ -147,7 +142,7 @@ $(document).ready(function() {
 	$('.feed-reel').dcPinterestFeed({
 		id: 'admirespaces',
 		tweetId: 'admirespaces',
-		results: 20
+		results: 50
 	});
 	$('.stream').addClass('bare-list');
 });

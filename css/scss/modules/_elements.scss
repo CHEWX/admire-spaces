@@ -23,7 +23,7 @@ ul.stream li {
         font-style: italic;
     }
     .section-share {
-        bottom: 8px;
+        bottom: 0px;
         right: 15px;
         position: absolute;
         z-index: 2;
@@ -34,16 +34,15 @@ ul.stream li {
             height: 16px;
             float: left;
             margin: 0 2px 0 0;
-            background: url(images/share.png) no-repeat 0 0;
+            color:$grey;
+
+            &:before {
+                cursor:pointer;
+            }
         }
-        a.share-twitter {
-            background-position: 0 -16px;
-        }
+        a.share-twitter:hover,
         a.share-facebook:hover {
-            background-position: -16px 0;
-        }
-        a.share-twitter:hover {
-            background-position: -16px -16px;
+            color:$navy;
         }
     }
 }
