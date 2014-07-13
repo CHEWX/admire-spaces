@@ -8,6 +8,7 @@
 		float:left;
 		width:20%;
 		margin-right:5%;
+		margin-bottom:5px;
 		border-bottom:1px dotted black;
 
 		a {
@@ -16,7 +17,7 @@
 
 		@include responsive (500px) {
 			width:100%;
-			margin:0;
+			margin-right:0px;
 		}
 	}
 }

@@ -29,7 +29,7 @@
 			var o = $.extend(true,this.defaults,options);
 
 			// Add ul tag to target element
-			$(el).append('<ul class="stream"></ul>');
+			$(el).append('<ul class="stream bare-list"></ul>');
 
 			// Set Pinterest RSS url using Google Feed API
 			var cp = o.id.split('/'),
@@ -146,7 +146,6 @@ $(document).ready(function() {
 			tweetId: 'admirespaces',
 			results: 50
 		});
-		$('.stream').addClass('bare-list');
 	}
 	if ($('.feed-reel--bathroom').size() > 0) {
 		$('.feed-reel--bathroom').dcPinterestFeed({
@@ -154,7 +153,6 @@ $(document).ready(function() {
 			tweetId: 'admirespaces',
 			results: 50
 		});
-		$('.stream').addClass('bare-list');
 	}
 	if ($('.feed-reel--office').size() > 0) {
 		$('.feed-reel--office').dcPinterestFeed({
@@ -162,7 +160,6 @@ $(document).ready(function() {
 			tweetId: 'admirespaces',
 			results: 50
 		});
-		$('.stream').addClass('bare-list');
 	}
 	if ($('.feed-reel--kitchen').size() > 0) {
 		$('.feed-reel--kitchen').dcPinterestFeed({
@@ -170,7 +167,6 @@ $(document).ready(function() {
 			tweetId: 'admirespaces',
 			results: 50
 		});
-		$('.stream').addClass('bare-list');
 	}
 	if ($('.feed-reel--living').size() > 0) {
 		$('.feed-reel--living').dcPinterestFeed({
@@ -178,6 +174,33 @@ $(document).ready(function() {
 			tweetId: 'admirespaces',
 			results: 50
 		});
-		$('.stream').addClass('bare-list');
+	}
+	if ($('.feed-reel--bedroom').size() > 0) {
+		$('.feed-reel--bedroom').dcPinterestFeed({
+			id: 'admirespaces/bedroom-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+	}
+	if ($('.feed-reel--arch').size() > 0) {
+		$('.feed-reel--arch').dcPinterestFeed({
+			id: 'admirespaces/architecture-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+	}
+	if ($('.feed-reel--detailed').size() > 0) {
+		$('.feed-reel--detailed').dcPinterestFeed({
+			id: 'admirespaces/detailed-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
+	}
+	if ($('.feed-reel--outside').size() > 0) {
+		$('.feed-reel--outside').dcPinterestFeed({
+			id: 'admirespaces/outside-spaces',
+			tweetId: 'admirespaces',
+			results: 50
+		});
 	}
 });
