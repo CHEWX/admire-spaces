@@ -61,6 +61,7 @@
 
 						// Add pinterest feed items to stream
 						$('.stream',el).append(html);
+						$('.feed-reel__loading').css("display", "none");
 					});
 				},
 				complete: function(){
